@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "swp"
+  datasource:\
+    url: "abc"
+    username: account
+    password: pass
+  jpa:
+      database: mysql
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+jwt:
+  signerKey: "enter secret key"
+  validDuration: 3600
