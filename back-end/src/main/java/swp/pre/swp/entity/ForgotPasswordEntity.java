@@ -13,7 +13,7 @@ import java.util.Date;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
 @Builder
-@Table(name = "ForgotPassword")
+@Table(name = "forgot_password")
 public class ForgotPasswordEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
