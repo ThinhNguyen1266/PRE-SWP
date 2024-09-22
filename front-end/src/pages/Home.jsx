@@ -1,9 +1,9 @@
 import React from "react";
+import img1 from "../assets/img/beef.jpg";
+import img3 from "../assets/img/ittime.jpg";
+import img2 from "../assets/img/us.jpg";
+import "../assets/styles/HomePage.css";
 import CarouselPage from "../components/CarouselPage";
-import img1 from "../img/beef.jpg";
-import img3 from "../img/ittime.jpg";
-import img2 from "../img/us.jpg";
-import "../styles/HomePage.css";
 
 function Home() {
   return (
