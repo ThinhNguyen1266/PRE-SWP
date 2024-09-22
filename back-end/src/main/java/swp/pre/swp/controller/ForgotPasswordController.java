@@ -50,7 +50,7 @@ public class ForgotPasswordController {
 
         ForgotPasswordEntity fp = ForgotPasswordEntity.builder()
                 .otp(otp)
-                .expirationTime(new Date(System.currentTimeMillis()+12000))
+                .expirationTime(new Date(System.currentTimeMillis()+50000))
                 .customer(customerEntity)
                 .ok(0)
                 .build();

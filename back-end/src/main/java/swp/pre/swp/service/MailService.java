@@ -27,11 +27,9 @@ public class MailService {
     public void sendSimpleMessage( MailBody mailBody){
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(mailBody.to());
-        message.setFrom("thienlpce181788@gmail.com");
+        message.setFrom("thienlpce181788@fpt.edu.vn");
         message.setSubject(mailBody.subject());
         message.setText(mailBody.text());
-
-
         javaMailSender.send(message);
     }
 

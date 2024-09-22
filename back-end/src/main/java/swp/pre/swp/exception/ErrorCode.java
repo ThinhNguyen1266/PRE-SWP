@@ -1,5 +1,6 @@
 package swp.pre.swp.exception;
 
+
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +15,11 @@ public enum ErrorCode {
     UNAUTHENTICATED(4001, "unauthenticated", HttpStatus.UNAUTHORIZED),
     USER_NOT_FOUND(4002, "user not found", HttpStatus.NOT_FOUND),
     ;
+
+
     int code;
     String message;
     HttpStatusCode httpStatusCode;
+
+
 }
