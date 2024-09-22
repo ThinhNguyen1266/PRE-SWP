@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import img1 from "../img/bg.jpg";
-import "../styles/Carousel.css";
+import img1 from "../assets/img/bg.jpg";
+import "../assets/styles/Carousel.css";
 
 function CarouselPage() {
   const [index, setIndex] = useState(0);

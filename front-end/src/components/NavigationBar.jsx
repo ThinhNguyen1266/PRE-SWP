@@ -5,8 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-import logo from "../img/logo.png";
-import "../styles/Nav.css";
+import logo from "../assets/img/logo.png";
+import "../assets/styles/Nav.css";
 
 function NavigationBar() {
   return (
