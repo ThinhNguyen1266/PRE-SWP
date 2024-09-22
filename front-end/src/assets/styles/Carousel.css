@@ -1,0 +1,64 @@
+.carousel-img {
+  width: 100vw; /* Chiều rộng full viewport */
+  height: 100vh; /* Chiều cao full viewport */
+  object-fit: cover; /* Bao phủ toàn bộ container */
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 58%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the start of the container */
+}
+
+.carousel-caption-custom h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0; /* Remove default margin to ensure alignment */
+}
+
+.carousel-caption-custom p {
+  font-size: 0.875rem;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.btn-custom {
+  border: 2px solid #eee9d3;
+  background-color: #eee9d3;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start; /* Ensures button aligns with text */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+  color: #000000;
+  border-color: #e7dc9d;
+  background-color: #e7dc9d;
+}
+
+.btn-custom:active {
+  color: #000000;
+  border-color: #bbb27f;
+  background-color: #bbb27f;
+}
