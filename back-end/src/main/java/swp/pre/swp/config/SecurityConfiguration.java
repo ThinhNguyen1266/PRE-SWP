@@ -28,7 +28,7 @@ import java.util.List;
 public class SecurityConfiguration {
 
     private final String[] PUBLIC_ENDPOINTS = {
-            "auth/login", "/regis", "auth/introspect"
+            "auth/login", "/regis", "auth/introspect","/branches","/branches/**","/create/branches","/create/food","/food/**"
     };
 
     CustomJWTDecoder jwtDecoder;
@@ -47,7 +47,7 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeHttpRequests(request ->
-                request.requestMatchers(HttpMethod.POST, PUBLIC_ENDPOINTS)
+                request.requestMatchers( PUBLIC_ENDPOINTS)
                         .permitAll()
                         .anyRequest().authenticated()
         );

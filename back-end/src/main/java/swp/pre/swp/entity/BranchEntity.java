@@ -9,7 +9,6 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.sql.Timestamp;
 
-
 @Entity
 @Data
 @AllArgsConstructor
@@ -18,23 +17,24 @@ import java.sql.Timestamp;
 @Table(name = "branch")
 @EntityListeners(AuditingEntityListener.class)
 public class BranchEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Automatically generate the ID
-     Integer branch_id;
-     String Status;
-     @CreatedDate
-     @Temporal(TemporalType.TIMESTAMP)
-     Timestamp create_date;
 
-     @LastModifiedDate
-     @Temporal(TemporalType.TIMESTAMP)
-     Timestamp update_date;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer branch_id;
+
+    String Status;
+
+    @CreatedDate
+    @Temporal(TemporalType.TIMESTAMP)
+    Timestamp create_date;
 
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
-    Timestamp delete_date;
+    Timestamp update_date; // Will only be set on updates
 
-     String  branch_name;
-     String location;
+    @Temporal(TemporalType.TIMESTAMP)
+    Timestamp delete_date; // Will remain null unless explicitly set
 
+    String branch_name;
+    String location;
 }
