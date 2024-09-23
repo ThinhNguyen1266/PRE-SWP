@@ -20,7 +20,7 @@ public class MenuEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer menu_id;
     // Thiết lập khóa ngoại tới bảng Branch
-    @OneToOne
-    @JoinColumn(name = "branch_id", referencedColumnName = "branch_id") // Cột khóa ngoại
+    @ManyToOne
+    @JoinColumn(name = "branch_id")
             BranchEntity branch; // Đây là trường liên kết với bảng Branch
 }
