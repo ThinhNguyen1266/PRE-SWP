@@ -25,7 +25,7 @@ public class MenuService {
                         menuItem.getFoodEntity().getFood_img(),
                         menuItem.getFoodEntity().getPrice(),
                         menuItem.getFoodEntity().getDescription(),
-                        menuItem.getFoodEntity().getCategoryEntity().getCat_id() // Assuming category is an entity
+                        menuItem.getFoodEntity().getCategoryEntity() // Assuming category is an entity
                 )
         ).collect(Collectors.toList());
     }
