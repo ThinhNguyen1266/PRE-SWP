@@ -13,14 +13,14 @@ public class FoodResponse {
     private String food_img;
     private String description;
     private BigDecimal price;
-    private Integer cat_id; // Only pass the category ID
+    private CategoryEntity categoryEntity; // Only pass the category ID
 
-    public FoodResponse(int food_id, String food_name, String food_img, String description, BigDecimal price, Integer cat_id) {
+    public FoodResponse(int food_id, String food_name, String food_img, String description, BigDecimal price, CategoryEntity categoryEntity) {
         this.food_id = food_id;
         this.food_name = food_name;
         this.food_img = food_img;
         this.description = description;
         this.price = price;
-        this.cat_id = cat_id;
+        this.categoryEntity = categoryEntity;
     }
 }

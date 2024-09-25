@@ -26,7 +26,7 @@ public class FoodController {
                 foodEntity.getFood_img(),
                 foodEntity.getDescription(),
                 foodEntity.getPrice(),
-                foodEntity.getCategoryEntity().getCat_id()
+                foodEntity.getCategoryEntity()
         );
     }
     @PutMapping("/food/{food_id}/update")
@@ -38,7 +38,7 @@ public class FoodController {
                 foodEntity.getFood_img(),
                 foodEntity.getDescription(),
                 foodEntity.getPrice(),
-                foodEntity.getCategoryEntity().getCat_id()
+                foodEntity.getCategoryEntity()
         );
     }
 
