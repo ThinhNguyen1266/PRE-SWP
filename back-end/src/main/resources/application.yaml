@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: "swp"
+  datasource:
+    url: "jdbc:mysql://swp-fa24.ctgg040kah0a.ap-east-1.rds.amazonaws.com:3306/minishop"
+    username: admin
+    password: Thinhne2004
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: thienlpce181788@fpt.edu.vn
+    password: shtrsznicufhmqvn
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+jwt:
+  signerKey: "u9XmfDeNsjC8ZrdM1Ig745GJ01RfRPY0sg44Z0oUJlHa2cOZ0vy5ADqKmn2c61nE"
+  validDuration: 3600
