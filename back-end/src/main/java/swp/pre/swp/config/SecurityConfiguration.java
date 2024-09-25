@@ -28,7 +28,7 @@ import java.util.List;
 public class SecurityConfiguration {
 
     private final String[] PUBLIC_ENDPOINTS = {
-            "auth/login", "/regis", "auth/introspect","/branches","/branches/**","/create/branches","/create/food","/food/**"
+            "auth/login", "/regis", "auth/introspect","/branches","/branches/**","/create/branches","/create/food","/food/**", "employee/getall","employee/create","employee/update/**","employee/delete/**"
     };
 
     CustomJWTDecoder jwtDecoder;
